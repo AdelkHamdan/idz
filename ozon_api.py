@@ -1,9 +1,10 @@
 # Модуль для запросов к Ozon Seller API
-# берем отчет по остаткам товаров на складах
+# берем отчет по остаткам товаров на складах (схемы FBS/rFBS)
+# важно: версия v3 этого метода отключена Ozon, поэтому используем v4
 
 import requests
 
-OZON_URL = 'https://api-seller.ozon.ru/v3/product/info/stocks'
+OZON_URL = 'https://api-seller.ozon.ru/v4/product/info/stocks'
 
 
 def get_stocks(client_id, api_key):
