@@ -3,3 +3,12 @@ __pycache__/
 .venv/
 .idea/
 .pytest_cache/
+
+# секреты
+.env
+
+# локальная база и файлы отчетов, которые бот генерирует
+data/*.db
+data/*.png
+data/*.csv
+!data/.gitkeep
